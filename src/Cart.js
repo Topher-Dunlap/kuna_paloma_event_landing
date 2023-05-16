@@ -80,6 +80,7 @@ export default function Cart(props) {
                     <Button
                         size="large"
                         variant="contained"
+                        disableRipple="true"
                         onClick={handleExpandVenmoPaymentClick}
                         sx={{
                             bgcolor: '#9c32cc',
