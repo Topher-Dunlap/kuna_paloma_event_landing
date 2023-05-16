@@ -73,7 +73,7 @@ export default function VenmoPayment(props) {
                     {
                         comboDoesNotExist !== 'not_found' ?
                             <>
-                                <Typography variant="subtitle2" padding="1.5rem 0 0 0" margin="2rem 0 0 0">
+                                <Typography variant="subtitle2" padding="1.5rem .5rem 0 .5rem" margin="2rem 0 0 0">
                                     Tap and hold QR code below to open link via browser or Venmo App
                                 </Typography>
                                 <Typography variant="subtitle2" padding="1.5rem 0 0 0" color= {pink[600]}>
