@@ -96,7 +96,7 @@ export default function OptionCard(props) {
             className="MuiCard-root"
             sx={{
                     maxWidth: 345,
-                    backgroundColor: '#9c32cc',
+                    backgroundColor: 'black',
                     color: '#fff',
                     borderWidth: '1px',
                 }}>

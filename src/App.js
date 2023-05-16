@@ -51,6 +51,7 @@ function App() {
 
     const handleExpandCartClick = () => {
         setExpandedCart(!expandedCart);
+
     };
 
     const executeScrollToCart = () => {
