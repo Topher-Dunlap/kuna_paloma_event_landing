@@ -71,15 +71,21 @@ export default function VenmoPayment(props) {
                 >
                     {
                         comboDoesNotExist !== 'not_found' ?
-                            <CardMedia
-                                component="img"
-                                height="auto"
-                                image={renderVenmoPhoto()}
-                                alt={'altText'}
-                            />
+                            <>
+                                <Typography variant="subtitle2" padding="1.5rem" margin="2rem 0 0 0">
+                                    Tap and hold QR code below to open link via browser or Venmo App
+                                </Typography>
+                                <CardMedia
+                                    component="img"
+                                    height="auto"
+                                    image={renderVenmoPhoto()}
+                                    alt={'altText'}
+                                />
+                            </>
                         :
                             <Typography variant="h6" padding="1.5rem" color="red">
-                                Unable to process venmo QR. Please try removing an item and pressing payment again. Otherwise reach out to Topher Dunlap on FB for specific questions.
+                                Unable to process venmo QR. Please try removing an item and pressing payment again.
+                                Otherwise reach out to Topher Dunlap on FB for specific questions.
                             </Typography>
                     }
 

@@ -90,7 +90,7 @@ export default function Cart(props) {
                             margin: '2rem 0'
                         }}
                     >
-                        Payment
+                        Venmo Payment
                     </Button>
                 </Box>
             )
