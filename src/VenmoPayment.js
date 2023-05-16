@@ -84,7 +84,8 @@ export default function VenmoPayment(props) {
                             </>
                         :
                             <Typography variant="h6" padding="1.5rem" color="red">
-                                Unable to process venmo QR. Please try removing an item and pressing payment again.
+                                Unable to process venmo QR as one or more of your selections overlap during the event.
+                                Please try removing an item and pressing payment again.
                                 Otherwise reach out to Topher Dunlap on FB for specific questions.
                             </Typography>
                     }
