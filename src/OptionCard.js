@@ -37,13 +37,24 @@ const popOverStyle = {
 
 export default function OptionCard(props) {
     const [clicked, setClicked] = useState(false)
-    const [popUpOpen, setPopUpOpen] = useState(false)
-    const handlePopUpOpen = () => {
+    const [advPopupOpen, setAdvPopupOpen] = useState(false)
+    const [whmPopupOpen, setWhmPopupOpen] = useState(false)
+
+    const handleAdvPopupOpen = () => {
         if(!clicked){
-            setPopUpOpen(true)
+            setAdvPopupOpen(true)
         }
     };
-    const handlePopUpClose = () => setPopUpOpen(false);
+    const handleAdvPopUpClose = () => setAdvPopupOpen(false);
+
+    const handleWhmPopupOpen = () => {
+        if(!clicked){
+            setWhmPopupOpen(true)
+        }
+    };
+    const handleWhmPopupClose = () => setWhmPopupOpen(false);
+
+
     let itemCount = props.itemCount
     const photoPath = props.photoPath
 
@@ -66,7 +77,10 @@ export default function OptionCard(props) {
 
     const handleIconClick = () => {
         if(props.title === 'Advanced Labs'){
-            handlePopUpOpen()
+            handleAdvPopupOpen()
+        }
+        if(props.title === 'Wim Hof Method'){
+            handleWhmPopupOpen()
         }
         if (clicked) {
             setClicked(false)
@@ -165,8 +179,8 @@ export default function OptionCard(props) {
                 </CardActions>
             </Card>
             <Modal
-                open={popUpOpen}
-                onClose={handlePopUpClose}
+                open={advPopupOpen}
+                onClose={handleAdvPopUpClose}
                 aria-labelledby="modal-modal-title"
                 aria-describedby="modal-modal-description"
             >
@@ -178,6 +192,30 @@ export default function OptionCard(props) {
                         With the selection of this pass you acknowledge the recommended
                         pre-requisites for the advanced lab training and consent to possible
                         pass transfer to lvl 1 bootcamp if skill level is not deemed to be at threshold.
+                    </Typography>
+                </Box>
+            </Modal>
+            <Modal
+                open={whmPopupOpen}
+                onClose={handleWhmPopupClose}
+                aria-labelledby="modal-modal-title"
+                aria-describedby="modal-modal-description"
+            >
+                <Box sx={popOverStyle}>
+                    <Typography id="modal-modal-title" variant="h6" component="h2">
+                        Dear Participant
+                    </Typography>
+                    <Typography id="modal-modal-description" sx={{mt: 2}}>
+                        We advise against practicing the WHM if you are dealing with any of the following:
+
+                        Coronary heart disease (e.g. Angina Pectoris; Stable Angina),
+                        Cold urticaria,
+                        Epilepsy,
+                        Kidney failure,
+                        Raynaud’s Syndrome (Type II),
+                        High blood pressure (in case of prescription medication),
+                        A history of serious health issues like heart failure or stroke,
+                        Shortly after an operation
                     </Typography>
                 </Box>
             </Modal>

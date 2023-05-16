@@ -15,6 +15,7 @@ import venmo_220 from './photos/venmo_220.jpg'
 import venmo_270 from './photos/venmo_270.jpg'
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
+import {pink} from "@mui/material/colors";
 
 
 export default function VenmoPayment(props) {
@@ -72,8 +73,11 @@ export default function VenmoPayment(props) {
                     {
                         comboDoesNotExist !== 'not_found' ?
                             <>
-                                <Typography variant="subtitle2" padding="1.5rem" margin="2rem 0 0 0">
+                                <Typography variant="subtitle2" padding="1.5rem 0 0 0" margin="2rem 0 0 0">
                                     Tap and hold QR code below to open link via browser or Venmo App
+                                </Typography>
+                                <Typography variant="subtitle2" padding="1.5rem 0 0 0" color= {pink[600]}>
+                                    *Passes non-refundable but are transferable*
                                 </Typography>
                                 <CardMedia
                                     component="img"
