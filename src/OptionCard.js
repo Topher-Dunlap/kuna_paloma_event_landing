@@ -99,7 +99,6 @@ export default function OptionCard(props) {
                     backgroundColor: '#9c32cc',
                     color: '#fff',
                     borderWidth: '1px',
-                    borderColor: '#fff'
                 }}>
             <CardHeader
                 avatar={
