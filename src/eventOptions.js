@@ -6,8 +6,8 @@ const options = [
         avatar: 'Beg - Int',
         dates: 'June 23-25',
         description: 'This bootcamp will be geared towards beginner-intermediate level ' +
-            'with the amazing instructor from Chicago, Sarah Zuccaro. ' +
-            'If you have been dancing Zouk less than a year or so, this could be a great option for you!' +
+            'with the multi talented instructor from Chicago, Sarah Zuccaro. ' +
+            'If you have been dancing Zouk less than a year or so, this could be a great option for you! ' +
             'The bootcamp will cover basic from footwork to head movement, ' +
             'Included: 8 hours of bootcamp with Sarah plus 2 hours of open level Friday ' +
             'with P&K and all socials.',
@@ -66,7 +66,7 @@ const options = [
         title: 'Wim Hof Method',
         avatar: 'Add-on',
         dates: 'June 24',
-        description: 'Join us for an exclusive 3 hour Wim Hoff Method workshop' +
+        description: 'Join us for an exclusive 3 hour Wim Hoff Method workshop ' +
             'with certified instructor Nick Fox.' +
             'The Wim Hoff Method is the combinations of three pillars. A committed consistent practice including the  ' +
             'breathing technique and cold exposure can help you unlock a host of benefits including ' +

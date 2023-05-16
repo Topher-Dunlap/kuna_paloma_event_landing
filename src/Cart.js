@@ -22,9 +22,9 @@ export default function Cart(props) {
         setExpandedVenmo(!expandedVenmo);
     };
 
-    useEffect(()=>{
+    useEffect(() => {
         setExpandedVenmo(false)
-    },[props.selections])
+    }, [props.selections])
 
     const cartSelections = props.selections.map(selection => {
         return (
@@ -119,8 +119,7 @@ export default function Cart(props) {
                     Remove Selections
                 </Button>
             )
-        }
-        else{
+        } else {
             return (
                 <Typography>
                     Select Item Below To Remove
@@ -137,7 +136,7 @@ export default function Cart(props) {
     }
 
     const removeCheckedSelections = () => {
-        if(checkedSelections.length > 0){
+        if (checkedSelections.length > 0) {
             checkedSelections.forEach(id => {
                 const updatedSelections = props.selections.filter(option => option.id !== id);
                 props.setSelections([...updatedSelections])
@@ -169,8 +168,8 @@ export default function Cart(props) {
                 <Paper
                     elevation={3}
                     sx={{
-                        justifyContent:"center",
-                        alignItems:"center",
+                        justifyContent: "center",
+                        alignItems: "center",
                     }}
                 >
                     <List
