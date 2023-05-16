@@ -14,6 +14,7 @@ import venmo_200 from './photos/venmo_200.jpg'
 import venmo_220 from './photos/venmo_220.jpg'
 import venmo_270 from './photos/venmo_270.jpg'
 import CardMedia from "@mui/material/CardMedia";
+import Typography from "@mui/material/Typography";
 
 
 export default function VenmoPayment(props) {
@@ -52,7 +53,10 @@ export default function VenmoPayment(props) {
         else if(props.total === 270){
             return venmo_270
         }
+        return 'not_found'
     }
+
+    const comboDoesNotExist = renderVenmoPhoto()
 
     return (
         <Collapse
@@ -62,15 +66,23 @@ export default function VenmoPayment(props) {
         >
             <Box>
                 <Paper
-                    elevation={3}
+                    elevation={0}
                     sx={{justifyContent:"center", alignItems:"center",}}
                 >
-                    <CardMedia
-                        component="img"
-                        height="auto"
-                        image={renderVenmoPhoto()}
-                        alt={'altText'}
-                    />
+                    {
+                        comboDoesNotExist !== 'not_found' ?
+                            <CardMedia
+                                component="img"
+                                height="auto"
+                                image={renderVenmoPhoto()}
+                                alt={'altText'}
+                            />
+                        :
+                            <Typography variant="h6" padding="1.5rem" color="red">
+                                Unable to process venmo QR. Please try removing an item and pressing payment again. Otherwise reach out to Topher Dunlap on FB for specific questions.
+                            </Typography>
+                    }
+
                 </Paper>
             </Box>
         </Collapse>
