@@ -88,7 +88,8 @@ function App() {
             />
             <ThemeProvider theme={theme}>
                 <header className="App-header">
-                    <img src={photo}
+                    <img
+                        src={photo}
                          className="App-photo-main"
                          alt="logo"
                     />

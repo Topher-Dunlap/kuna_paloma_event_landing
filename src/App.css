@@ -7,9 +7,11 @@
 }
 
 .App-photo-main {
-  height: 57vmin;
+  /*height: 57vmin;*/
+  height: 85vmin;
   pointer-events: none;
   margin-top: 6rem;
+
 }
 
 .App-header {
