@@ -190,7 +190,7 @@ export default function OptionCard(props) {
                     <Typography id="modal-modal-description" sx={{mt: 2}}>
                         With the selection of this pass you acknowledge the recommended
                         pre-requisites for the advanced lab training and consent to possible
-                        pass transfer to lvl 1 bootcamp if skill level is not deemed to be at threshold.
+                        pass transfer to Friday pass only if skill level is not deemed to be at threshold.
                     </Typography>
                 </Box>
             </Modal>
