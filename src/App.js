@@ -1,4 +1,4 @@
-import photo from './photos/Zoukapolis_K_P.png';
+import photo from './photos/Zoukapolis.png';
 import './App.css';
 import {Typography} from "@mui/material";
 import options from "./eventOptions"

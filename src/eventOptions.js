@@ -1,19 +1,19 @@
 const options = [
-    // {
-    //     id: 1,
-    //     price: 150,
-    //     title: 'Lvl 1 Bootcamp',
-    //     avatar: 'Beg - Int',
-    //     dates: 'June 23-25',
-    //     description: 'This bootcamp will be geared towards beginner-intermediate level ' +
-    //         'with the multi talented instructor from Chicago, Sarah Zuccaro. ' +
-    //         'If you have been dancing Zouk less than a year or so, this could be a great option for you! ' +
-    //         'The bootcamp will cover basic from footwork to head movement, ' +
-    //         'Included: 8 hours of bootcamp with Sarah plus 2 hours of open level Friday ' +
-    //         'with P&K and all socials.',
-    //     photoPath: 'sarahZ',
-    //     altText: 'sarah zuccaro pic'
-    // },
+    {
+        id: 1,
+        price: 150,
+        title: 'Lvl 1 Bootcamp',
+        avatar: 'Beg - Int',
+        dates: 'June 24',
+        description: 'This bootcamp will be geared towards beginner-intermediate level ' +
+            'with the multi talented instructor from Chicago, Sarah Zuccaro. ' +
+            'If you have been dancing Zouk less than a year or so, this could be a great option for you! ' +
+            'The bootcamp will cover basic from footwork to head movement, ' +
+            'Included: 4 hours of bootcamp with Sarah plus 3 hours of open level with Kuna & Paloma Friday ' +
+            'and all socials.',
+        photoPath: 'sarahZ',
+        altText: 'sarah zuccaro pic'
+    },
     {
         id: 2,
         price: 200,
@@ -42,7 +42,7 @@ const options = [
     {
         id: 4,
         price: 55,
-        title: 'All Social Pass',
+        title: 'All Socials Pass',
         avatar: 'All',
         dates: 'June 23 - 25',
         description: 'This pass includes ALL nights of dancing June 23-25 ONLY ' ,
@@ -55,7 +55,7 @@ const options = [
         title: 'Friday Pass + Social',
         avatar: 'Add-on',
         dates: 'June 23',
-        description: 'This pass includes the 2 hour open level workshop with Paloma and Kuna. ' +
+        description: 'This pass includes the 3 hour open level workshop with Paloma and Kuna. ' +
             'It also includes the Friday night social ONLY' ,
         photoPath: 'friday_pass',
         altText: 'friday_pass pic'

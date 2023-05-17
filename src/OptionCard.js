@@ -187,7 +187,7 @@ export default function OptionCard(props) {
                     <Typography id="modal-modal-title" variant="h6" component="h2">
                         Dear Participant
                     </Typography>
-                    <Typography id="modal-modal-description" sx={{mt: 2}}>
+                    <Typography id="modal-modal-description" sx={{mt: 2, padding: '1.5rem'}}>
                         With the selection of this pass you acknowledge the recommended
                         pre-requisites for the advanced lab training and consent to possible
                         pass transfer to Friday pass only if skill level is not deemed to be at threshold.

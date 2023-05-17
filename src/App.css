@@ -7,8 +7,8 @@
 }
 
 .App-photo-main {
-  /*height: 57vmin;*/
-  height: 85vmin;
+  height: 55vmin;
+  /*height: 85vmin;*/
   pointer-events: none;
   margin-top: 6rem;
 
