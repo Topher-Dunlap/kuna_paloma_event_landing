@@ -56,6 +56,7 @@ export default function OptionCard(props) {
 
     let itemCount = props.itemCount
     const photoPath = props.photoPath
+    const selections = props.selections
 
     //when selections array is updated change the state of add/remove on card if necessary
     useEffect(() => {
@@ -71,7 +72,7 @@ export default function OptionCard(props) {
         } else {
             setClicked(false)
         }
-    }, [props.selections])
+    }, [selections])
 
 
     const handleIconClick = () => {
@@ -190,7 +191,7 @@ export default function OptionCard(props) {
                     <Typography id="modal-modal-description" sx={{mt: 2, padding: '1.5rem'}}>
                         With the selection of this pass you acknowledge the recommended
                         pre-requisites for the advanced lab training and consent to possible
-                        pass transfer to Friday pass only if skill level is not deemed to be at threshold.
+                        pass transfer to lvl 1 pass if skill level is not deemed to be at threshold.
                     </Typography>
                 </Box>
             </Modal>
