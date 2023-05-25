@@ -85,6 +85,10 @@ export default function VenmoPayment(props) {
                                     image={renderVenmoPhoto()}
                                     alt={'altText'}
                                 />
+                                <Typography variant="subtitle2" padding="0 .75rem 0 .75rem">
+                                    If QR code above does not work please send to venmo payment directly to @christopher-dunlap-1
+                                    with a tagline about what pass is being purchased OR send paypal payment to Thelonioustopher@yahoo.com.
+                                </Typography>
                             </>
                         :
                             <Typography variant="h6" padding="1.5rem" color="red">

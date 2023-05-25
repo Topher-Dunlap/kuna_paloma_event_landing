@@ -23,7 +23,7 @@ const options = [
         description: 'This lab will be geared towards advanced zouk dancers. ' +
             'Prerequisites: knowledge in Zouk body mechanics, all basic patterns as well as complex ' +
             'patterns including head movement including but not limited to Piao with head-movement, clockwise and counter clockwise. ' +
-            'We will explore footwork, speed dynamics, turns, head movement,' +
+            'We will explore footwork, speed dynamics, turns, head movement, ' +
             'and the affects of speed dynamics within head movement. ' +
             'Included: 8 hours of adv labs plus 2 hours of open level Friday with P&K and all socials. ',
         photoPath: 'kpPhoto',
