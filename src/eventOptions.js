@@ -1,7 +1,7 @@
 const options = [
     {
         id: 1,
-        price: 150,
+        price: 125,
         title: 'Lvl 1 Bootcamp',
         avatar: 'Beg - Int',
         dates: 'June 24',
